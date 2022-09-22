@@ -16,6 +16,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+         
           "options": {
             "outputPath": "dist/front-end-test-app",
             "index": "src/index.html",
@@ -103,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2fd0019a-cc4d-47de-b761-afe738b79183"
   }
 }

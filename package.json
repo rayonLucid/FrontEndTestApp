@@ -9,6 +9,7 @@
     "test": "ng test"
   },
   "private": true,
+  "repository": {"url": "https://github.com/rayonLucid/AngularTutorial.git"},
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",

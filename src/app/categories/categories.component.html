@@ -1,0 +1,45 @@
+<style>
+::-webkit-scrollbar{width:1px;}
+td {
+padding: 1em; border:#000ee8 solid 2px;border-radius: 10px;
+font-weight:bold;font-size: large;}
+th {
+padding: 1em; 
+border-bottom:#000ee8 solid 2px;
+background-color: powderblue;
+margin-bottom: 30px;
+}
+</style>
+<main *ngIf="IsCategoriesComponent" 
+style="height:100vh;overflow:auto;padding-top:40px;place-items: center;display: flex;flex-direction: column;">
+
+
+<h1>{{title}}</h1>
+
+<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading">Loading...</span>
+</div>
+
+</div>
+<div [ngStyle]="{'display': 'flex','gap':'14px','width':'100%' }">
+<div [ngStyle]="{'height': '100vh','overflow':'auto','flex':'1'}">
+<table class="table lightweight-table" id='tab' *ngIf="lis" [ngStyle]="{'width':'100%' }" >
+    <thead>
+    <tr >
+        <th scope="col" >List Of Categories</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of catlist;">
+        <td ><a  (click)="GetCategory(e)">{{ e }}</a></td>
+    </tr>
+    </tbody>
+</table> 
+</div>
+<div   style="flex:1;height: 90vh;overflow: auto;" >
+<app-categories-detail [Detaillist]="Detaillist"></app-categories-detail> 
+</div>
+</div>
+</main>                 

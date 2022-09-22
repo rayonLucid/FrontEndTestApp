@@ -1,0 +1,69 @@
+<style>
+tr,td {
+padding: 1em; border-bottom:#000ee8 solid 2px;border-radius: 0px;
+font-weight:bold;font-size: large;}
+th {
+padding: 1em; 
+border-bottom:#000ee8 solid 2px;
+background-color: powderblue;
+margin-bottom: 30px;
+}
+.form-group{
+padding-top: 10px;
+display:flex;
+flex-direction: column;
+font-size: medium;
+text-transform: capitalize;
+}
+.form-control{
+padding: 10px;
+margin-top: 12px;
+font-size: medium;
+text-transform: capitalize;
+}
+::-webkit-scrollbar{
+width:1px;
+}
+body{overflow: hidden;}
+</style>
+<main  style="height:100vh;overflow:auto;padding-top:40px;">
+
+
+<h1>{{title}}</h1>
+
+<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading">Loading...</span>
+</div>
+
+</div>
+
+<div [ngStyle]="{'height': '80vh','overflow':'auto','margin':'0 auto','display':'flex','flex-direction':'column' }">
+<div>
+<input type="search" class="form-control" 
+ (change)="FilterTable()" [(ngModel)]="searchTable">
+</div>
+
+<table class="table lightweight-table" id='tab' *ngIf="ListofPeople" [ngStyle]="{'width': '50%' }">
+    <thead>
+    <tr >
+        <th scope="col" >Name</th>
+          <th scope="col" >Height</th>
+           <th scope="col" >Birth Year</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of ListofPeople">
+        <td ><a >{{ e.name }}</a></td>
+          <td ><a >{{ e.height }}</a></td>
+            <td ><a >{{ e.birth_year }}</a></td>
+    </tr>
+    </tbody>
+</table> 
+</div>
+<!-- <div  *ngIf="ShowDetails" style="width:50%">
+<app-categories-detail [Detaillist]="Detaillist"></app-categories-detail> 
+</div>
+</div>
+</main>                  -->
