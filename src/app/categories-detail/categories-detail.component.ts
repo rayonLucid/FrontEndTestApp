@@ -5,7 +5,7 @@ import { DatePipe } from '@angular/common';
   templateUrl: './categories-detail.component.html',
   styleUrls: ['./categories-detail.component.sass']
 })
-export class CategoriesDetailComponent implements OnInit ,OnChanges{
+export class CategoriesDetailComponent implements OnChanges{
 title ="Category Detail";
 updated_at :string|null  ="";
 imageurl:string ="";
@@ -24,10 +24,7 @@ let formattedDate = datepipe.transform(this.Detaillist.updated_at, 'dd-MMM-YYYY'
 this.updated_at=formattedDate;
   } 
  
-  ngOnInit(): void {
-
-  }
-
+ 
 }
 export class CategoryDetails{
   created_at!: string;

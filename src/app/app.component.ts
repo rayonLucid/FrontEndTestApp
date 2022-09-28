@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'FrontEndTestApp';
+  title = 'Take Home Font End App';
   IsAppComponent=true;
   
    constructor( ){

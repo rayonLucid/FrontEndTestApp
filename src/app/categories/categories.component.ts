@@ -17,9 +17,8 @@ IsCategoriesComponent=true;
    lis=[];
    catlist:string[]=[];
 Detaillist:CategoryDetails = new CategoryDetails;
-detLi :any;
+detLi :any; 
   constructor(private http : HttpClient){
-  
 }
 GetCategory(value:string) :void{
  let url =`https://api.chucknorris.io/jokes/random?category=${value}`;

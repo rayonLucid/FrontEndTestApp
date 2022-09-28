@@ -63,7 +63,6 @@ starships!:string[];
 created!:string;
 edited!:string;
 url!:string;
-
 }
 export interface IPeople {
 name:string,

@@ -49,15 +49,18 @@ body{overflow: hidden;}
     <tr >
         <th scope="col" >Name</th>
           <th scope="col" >Height</th>
-           <th scope="col" >Birth Year</th>
-        
+           <th scope="col" >Mass</th>
+         <th scope="col" >Birth Year</th>
+          <th scope="col" >Hair Color</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let e of ListofPeople">
         <td ><a >{{ e.name }}</a></td>
           <td ><a >{{ e.height }}</a></td>
+            <td ><a >{{ e.mass }}</a></td>
             <td ><a >{{ e.birth_year }}</a></td>
+              <td ><a >{{ e.hair_color }}</a></td>
     </tr>
     </tbody>
 </table> 
