@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
+<p>This Application consumes the apis with the following End points : </p>
+<ul>
+<li> /chuck/categories </li>
+<li> /swapi/people  </li>
+<li> /search ?query={query}  </li>
+</ul>
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
