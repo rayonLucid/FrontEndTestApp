@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-joke-search',
   templateUrl: './joke-search.component.html',
-  styleUrls: ['./joke-search.component.sass']
+  styleUrls: ['./joke-search.component.css']
 })
 export class JokeSearchComponent implements OnInit {
 title="Search People Or Jokes";

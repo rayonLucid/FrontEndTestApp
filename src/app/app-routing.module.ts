@@ -7,9 +7,9 @@ import { JokeSearchComponent } from './people/joke-search/joke-search.component'
 import { PeopleComponent } from './people/people.component';
 
 const routes: Routes = [
-{ path: '', component: AppComponent,pathMatch:"full" },
+
 { path: 'categories', component: CategoriesComponent,pathMatch:"full" },
-{ path: 'people', component: PeopleComponent,pathMatch:"full" },
+{ path: '', component: PeopleComponent,pathMatch:"full" },
 { path: 'categorydetail', component: CategoriesDetailComponent,pathMatch:"full" },
 { path: 'peoplejokesearch', component: JokeSearchComponent,pathMatch:"full" }
 ];

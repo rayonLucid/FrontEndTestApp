@@ -3,7 +3,7 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-categories-detail',
   templateUrl: './categories-detail.component.html',
-  styleUrls: ['./categories-detail.component.sass']
+  styleUrls: ['./categories-detail.component.css']
 })
 export class CategoriesDetailComponent implements OnChanges{
 title ="Category Detail";
